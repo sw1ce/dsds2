@@ -5,8 +5,8 @@ for i,v in pairs(game.ReplicatedStorage.Viewmodels:GetChildren()) do
     end
 end
 ----------------------------------------------------------------------------------------
-if game.CoreGui:FindFirstChild("sw1ce.xyz") then
-    game.CoreGui["sw1ce.xyz"]:Destroy()
+if game.CoreGui:FindFirstChild("grower.ware") then
+    game.CoreGui["grower.ware"]:Destroy()
 end
 local cbClient = getsenv(game.Players.LocalPlayer.PlayerGui.Client)
 local a = game:GetService("UserInputService")
@@ -23,11 +23,11 @@ local k = {}
 local l = {Scrolling = false, options = {}}
 
 function l:CreateUI()
-    if not isfolder("sw1ce") then
-        makefolder("sw1ce")
+    if not isfolder("grower") then
+        makefolder("grower")
     end
     local m = Instance.new("ScreenGui")
-    m.Name = "sw1ce.xyz"
+    m.Name = "grower.ware"
     local n = Instance.new("ImageLabel")
     n.Name = "main"
     n.Size = UDim2.new(0, 320, 0, 365)
@@ -71,7 +71,7 @@ function l:CreateUI()
     q.Parent = n
     local r = Instance.new("TextLabel")
     r.Name = "name"
-    r.Text = "sw1ce.xyz"
+    r.Text = "grower.ware"
     r.TextColor3 = Color3.new(1, 1, 1)
     r.Size = UDim2.new(1, 0, 0, 20)
     r.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
@@ -1533,7 +1533,7 @@ a.InputBegan:connect(function(w)
                                     )
                                     getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Main.Chats.DisplayChat).moveOldMessages()
                                     getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Main.Chats.DisplayChat).createNewMessage(
-                                        "pepsi.club",
+                                        "grower.ware",
                                         "edgebugged",
                                         Color3.fromRGB(255,0,0), 
                                         Color3.new(1,1,1),
@@ -2047,7 +2047,7 @@ aE:CreateToggle("Watermark", function(K)
         Text.Size = UDim2.new(1, 0, 1, 0)
         Text.ZIndex = 4
         Text.Font = Enum.Font.RobotoMono
-        Text.Text = "sw1ce.xyz | 00:00:00  | Oct. 17, 2021"
+        Text.Text = "grower.ware | 00:00:00  | Oct. 17, 2021"
         Text.TextColor3 = Color3.fromRGB(65025, 65025, 65025)
         Text.TextSize = 14.000
         Text.TextStrokeTransparency = 0.000
@@ -2104,7 +2104,7 @@ aE:CreateToggle("Watermark", function(K)
                 if h > 12 then
                     h = h - 12
                 end
-                script.Parent.Text = "sw1ce.xyz | " ..h.. ":" ..m.. ":" ..s.. " " ..mo.. " | " ..mon[mont][1].. " " ..d.. ", " ..y
+                script.Parent.Text = "grower.ware | " ..h.. ":" ..m.. ":" ..s.. " " ..mo.. " | " ..mon[mont][1].. " " ..d.. ", " ..y
             end
         end
 
@@ -2734,7 +2734,7 @@ end)
 
 otherDropdown = aG:CreateDropdown("Other", {"Reset Viewmodels", "Unlock Inv"}, function(K)
     if K == "Reset Viewmodels" then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/deaddigi/pepsi.club/main/skins/resetviewmodels", true))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/deaddigi//main/skins/resetviewmodels", true))()
     elseif K == "Unlock Inv" then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/6segs/millionware/main/inv", true))()
     end
