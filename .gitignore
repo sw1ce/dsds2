@@ -23,8 +23,7 @@ local k = {}
 local l = {Scrolling = false, options = {}}
 
 function l:CreateUI()
-    if not isfolder("sw1ce
-  ") then
+    if not isfolder("sw1ce") then
         makefolder("sw1ce")
     end
     local m = Instance.new("ScreenGui")
