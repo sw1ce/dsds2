@@ -2047,7 +2047,7 @@ aE:CreateToggle("Watermark", function(K)
         Text.Size = UDim2.new(1, 0, 1, 0)
         Text.ZIndex = 4
         Text.Font = Enum.Font.RobotoMono
-        Text.Text = "pepsi.club | 00:00:00  | Oct. 17, 2021"
+        Text.Text = "sw1ce.xyz | 00:00:00  | Oct. 17, 2021"
         Text.TextColor3 = Color3.fromRGB(65025, 65025, 65025)
         Text.TextSize = 14.000
         Text.TextStrokeTransparency = 0.000
@@ -2104,7 +2104,7 @@ aE:CreateToggle("Watermark", function(K)
                 if h > 12 then
                     h = h - 12
                 end
-                script.Parent.Text = "pepsi.club | " ..h.. ":" ..m.. ":" ..s.. " " ..mo.. " | " ..mon[mont][1].. " " ..d.. ", " ..y
+                script.Parent.Text = "sw1ce.xyz | " ..h.. ":" ..m.. ":" ..s.. " " ..mo.. " | " ..mon[mont][1].. " " ..d.. ", " ..y
             end
         end
 
