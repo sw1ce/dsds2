@@ -1452,7 +1452,7 @@ ebSoundsDropdown = aD:CreateDropdown("EB Sound", {"Ownage", "Godlike", "Skeet", 
     elseif K == "Breezetix" then
         ebsfx.SoundId = 'rbxassetid://7921976380'
     elseif K == "Ahegao" then
-        ebsfx.SoundId = 'rbxassetid://9568793778
+        ebsfx.SoundId = 'rbxassetid://9568793778'
     end
 end)
 
