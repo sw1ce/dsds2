@@ -727,7 +727,7 @@ local aA = l:CreateUI()
 ------------------------------------ TABS ------------------------------------
 local aB = aA:CreateTab("aimbot")
 local aC = aA:CreateTab("visuals")
-local aD = aA:CreateTab("movement")
+local aD = aA:CreateTab("movementik")
 local aE = aA:CreateTab("other")
 local aG = aA:CreateTab("skins")
 local aI = aA:CreateTab("models")
@@ -1323,7 +1323,7 @@ zViewmodel = aC:CreateSlider("Z", 360, function(W)
     ViewmodelZ = W
 end)
 ------------------------------------ MOVEMENT ------------------------------------
-aD:CreateLabel("Movement")
+aD:CreateLabel("Movementik")
 
 local localPlayer = game.Players.LocalPlayer
 bunnyhop = aD:CreateToggle("Bunny hop", function(val)
@@ -1440,17 +1440,13 @@ aD:CreateLabel("Sounds")
 local ebsfx = Instance.new("Sound")
 ebsfx.Parent = game:GetService("SoundService")
 
-ebSoundsDropdown = aD:CreateDropdown("EB Sound", {"Ownage", "Godlike", "Skeet", "Wow", "Breezetix", "Ahegao", "Sasha"}, function(K)
+ebSoundsDropdown = aD:CreateDropdown("EB Sound", {"Ownage", "Godlike", "Skeet", "Ahegao", "Sasha"}, function(K)
     if K == "Ownage" then
         ebsfx.SoundId = 'rbxassetid://6887181639'
     elseif K == "Godlike" then
         ebsfx.SoundId = 'rbxassetid://7463103082'
     elseif K == "Skeet" then
-        ebsfx.SoundId = 'rbxassetid://5447626464'
-    elseif K == "Wow" then
-        ebsfx.SoundId = 'rbxassetid://7872233648'
-    elseif K == "Breezetix" then
-        ebsfx.SoundId = 'rbxassetid://7921976380'
+        ebsfx.SoundId = 'rbxassetid://5447626464'    
     elseif K == "Ahegao" then
         ebsfx.SoundId = 'rbxassetid://9568793778' 
     elseif K == "Sasha" then
