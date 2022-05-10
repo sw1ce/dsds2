@@ -5,8 +5,8 @@ for i,v in pairs(game.ReplicatedStorage.Viewmodels:GetChildren()) do
     end
 end
 ----------------------------------------------------------------------------------------
-if game.CoreGui:FindFirstChild("grower.ware") then
-    game.CoreGui["grower.ware"]:Destroy()
+if game.CoreGui:FindFirstChild("pepsi.club") then
+    game.CoreGui["pepsi.club"]:Destroy()
 end
 local cbClient = getsenv(game.Players.LocalPlayer.PlayerGui.Client)
 local a = game:GetService("UserInputService")
@@ -21,13 +21,12 @@ local i = workspace.CurrentCamera
 local j = g:GetMouse()
 local k = {}
 local l = {Scrolling = false, options = {}}
-
 function l:CreateUI()
-    if not isfolder("grower") then
-        makefolder("grower")
+    if not isfolder("pepsi") then
+        makefolder("pepsi")
     end
     local m = Instance.new("ScreenGui")
-    m.Name = "grower.ware"
+    m.Name = "sw1ce.xyz"
     local n = Instance.new("ImageLabel")
     n.Name = "main"
     n.Size = UDim2.new(0, 320, 0, 365)
@@ -71,7 +70,7 @@ function l:CreateUI()
     q.Parent = n
     local r = Instance.new("TextLabel")
     r.Name = "name"
-    r.Text = "grower.ware"
+    r.Text = "sw1ce.xyz"
     r.TextColor3 = Color3.new(1, 1, 1)
     r.Size = UDim2.new(1, 0, 0, 20)
     r.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
@@ -727,7 +726,7 @@ local aA = l:CreateUI()
 ------------------------------------ TABS ------------------------------------
 local aB = aA:CreateTab("aimbot")
 local aC = aA:CreateTab("visuals")
-local aD = aA:CreateTab("movementik")
+local aD = aA:CreateTab("movement")
 local aE = aA:CreateTab("other")
 local aG = aA:CreateTab("skins")
 local aI = aA:CreateTab("models")
@@ -1323,7 +1322,7 @@ zViewmodel = aC:CreateSlider("Z", 360, function(W)
     ViewmodelZ = W
 end)
 ------------------------------------ MOVEMENT ------------------------------------
-aD:CreateLabel("Movementik")
+aD:CreateLabel("Movement")
 
 local localPlayer = game.Players.LocalPlayer
 bunnyhop = aD:CreateToggle("Bunny hop", function(val)
@@ -1440,17 +1439,17 @@ aD:CreateLabel("Sounds")
 local ebsfx = Instance.new("Sound")
 ebsfx.Parent = game:GetService("SoundService")
 
-ebSoundsDropdown = aD:CreateDropdown("EB Sound", {"Ownage", "Godlike", "Skeet", "Ahegao", "Sasha"}, function(K)
+ebSoundsDropdown = aD:CreateDropdown("EB Sound", {"Ownage", "Godlike", "Skeet", "Wow", "Breezetix"}, function(K)
     if K == "Ownage" then
         ebsfx.SoundId = 'rbxassetid://6887181639'
     elseif K == "Godlike" then
         ebsfx.SoundId = 'rbxassetid://7463103082'
     elseif K == "Skeet" then
-        ebsfx.SoundId = 'rbxassetid://5447626464'    
-    elseif K == "Ahegao" then
-        ebsfx.SoundId = 'rbxassetid://9568793778' 
-    elseif K == "Sasha" then
-        ebsfx.SoundId = 'rbxassetid://9569908191' 
+        ebsfx.SoundId = 'rbxassetid://5447626464'
+    elseif K == "Wow" then
+        ebsfx.SoundId = 'rbxassetid://7872233648'
+    elseif K == "Breezetix" then
+        ebsfx.SoundId = 'rbxassetid://7921976380'
     end
 end)
 
@@ -1533,7 +1532,7 @@ a.InputBegan:connect(function(w)
                                     )
                                     getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Main.Chats.DisplayChat).moveOldMessages()
                                     getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Main.Chats.DisplayChat).createNewMessage(
-                                        "grower.ware",
+                                        "sw1ce.xyz",
                                         "edgebugged",
                                         Color3.fromRGB(255,0,0), 
                                         Color3.new(1,1,1),
@@ -2047,7 +2046,7 @@ aE:CreateToggle("Watermark", function(K)
         Text.Size = UDim2.new(1, 0, 1, 0)
         Text.ZIndex = 4
         Text.Font = Enum.Font.RobotoMono
-        Text.Text = "grower.ware | 00:00:00  | Oct. 17, 2021"
+        Text.Text = "sw1ce.xyz | 00:00:00  | Oct. 17, 2021"
         Text.TextColor3 = Color3.fromRGB(65025, 65025, 65025)
         Text.TextSize = 14.000
         Text.TextStrokeTransparency = 0.000
@@ -2104,7 +2103,7 @@ aE:CreateToggle("Watermark", function(K)
                 if h > 12 then
                     h = h - 12
                 end
-                script.Parent.Text = "grower.ware | " ..h.. ":" ..m.. ":" ..s.. " " ..mo.. " | " ..mon[mont][1].. " " ..d.. ", " ..y
+                script.Parent.Text = "sw1ce.xyz | " ..h.. ":" ..m.. ":" ..s.. " " ..mo.. " | " ..mon[mont][1].. " " ..d.. ", " ..y
             end
         end
 
@@ -2734,7 +2733,7 @@ end)
 
 otherDropdown = aG:CreateDropdown("Other", {"Reset Viewmodels", "Unlock Inv"}, function(K)
     if K == "Reset Viewmodels" then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/deaddigi//main/skins/resetviewmodels", true))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/deaddigi/pepsi.club/main/skins/resetviewmodels", true))()
     elseif K == "Unlock Inv" then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/6segs/millionware/main/inv", true))()
     end
