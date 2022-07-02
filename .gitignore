@@ -5,8 +5,8 @@ for i,v in pairs(game.ReplicatedStorage.Viewmodels:GetChildren()) do
     end
 end
 ----------------------------------------------------------------------------------------
-if game.CoreGui:FindFirstChild("pepsi.club") then
-    game.CoreGui["pepsi.club"]:Destroy()
+if game.CoreGui:FindFirstChild("sw1ce.xyz") then
+    game.CoreGui["sw1ce.xyz"]:Destroy()
 end
 local cbClient = getsenv(game.Players.LocalPlayer.PlayerGui.Client)
 local a = game:GetService("UserInputService")
@@ -21,9 +21,10 @@ local i = workspace.CurrentCamera
 local j = g:GetMouse()
 local k = {}
 local l = {Scrolling = false, options = {}}
+
 function l:CreateUI()
-    if not isfolder("pepsi") then
-        makefolder("pepsi")
+    if not isfolder("sw1ce") then
+        makefolder("sw1ce")
     end
     local m = Instance.new("ScreenGui")
     m.Name = "sw1ce.xyz"
@@ -376,7 +377,7 @@ function l:CreateUI()
                     end
                 end
                 if G then
-                    local a5, a6 = string.gsub(W, "pepsi\\", "")
+                    local a5, a6 = string.gsub(W, "sw1ce\\", "")
                     a1.Text = a5
                     _(W)
                 end
@@ -390,7 +391,7 @@ function l:CreateUI()
                 a2.BorderSizePixel = #W >= 1 and 1 or 0
                 a2.Size = UDim2.new(1, 0, 0, #W * 13)
                 for B, C in next, W do
-                    local a5, a6 = string.gsub(C, "pepsi\\", "")
+                    local a5, a6 = string.gsub(C, "sw1ce\\", "")
                     local a8 = Instance.new("TextButton")
                     a8.Name = C
                     a8.Size = UDim2.new(0, 100, 0, 12)
@@ -1936,7 +1937,7 @@ aF:CreateLabel("Cfg")
 
 configName = aF:Textbox("Config name")
 
-Config = aF:CreateDropdown("Config", listfiles("pepsi"), function(bI)
+Config = aF:CreateDropdown("Config", listfiles("sw1ce"), function(bI)
     k.Config = bI
 end)
 
@@ -1949,8 +1950,8 @@ createConfig = aF:CreateButton("Create config", function()
             bM[B] = k[B]
         end
     end
-    writefile("pepsi\\" .. configName.Text .. ".pepsi", c:JSONEncode(bM))
-    l.options.Config.updateList(listfiles("pepsi"))
+    writefile("sw1ce\\" .. configName.Text .. ".sw1ce", c:JSONEncode(bM))
+    l.options.Config.updateList(listfiles("sw1ce"))
 end)
 
 saveConfig = aF:CreateButton("Save config", function()
@@ -1965,7 +1966,7 @@ saveConfig = aF:CreateButton("Save config", function()
         end
         writefile(k.Config, c:JSONEncode(bM))
     end
-    l.options.Config.updateList(listfiles("pepsi"))
+    l.options.Config.updateList(listfiles("sw1ce"))
 end)
 
 loadConfig = aF:CreateButton("Load config", function()
@@ -1984,11 +1985,13 @@ loadConfig = aF:CreateButton("Load config", function()
             end
         end
     end
-    l.options.Config.updateList(listfiles("pepsi"))
+    l.options.Config.updateList(listfiles("sw1ce"))
 end)
 
 refreshConfigs = aF:CreateButton("Refresh configs", function()
-    l.options.Config.updateList(listfiles("pepsi"))
+    l.options.Config.updateList(listfiles("sw1ce"))
+     
+  
 end)
 
 ------------------------------------ MISC ------------------------------------
